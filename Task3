@@ -1,0 +1,38 @@
+#include <iostream>
+
+int main()
+{
+    char name[11];
+    printf("Enter name: ");
+    scanf("%s", name);
+
+    float stavka;
+    std::cout << "Enter stavka: ";
+    std::cin >> stavka;
+    stavka = stavka * 3400;
+
+    double premiya, oklad;
+    std::cout << "Enter premiya, oklad (separated by space): ";
+    std::cin >> premiya >> oklad;
+
+    double nachisleno=oklad+premiya,
+            nalog=nachisleno*0.13,
+            total=nachisleno-nalog;
+
+    printf("\r\n");
+    printf("+----------------------------------------------------------------------------------------------+\r\n");
+    printf("|                                 Raschet zarabotnoi plati                                     |\r\n");
+    printf("+------------+-------+----------------+----------------+-------------------+-------------------+\r\n");
+    printf("|      1     |   2   |        3       |        4       |          5        |         6         |\r\n");
+    printf("+------------+-------+----------------+----------------+-------------------+-------------------+\r\n");
+    printf("|    Name    | oklad |     stavka     |   nachisleno   |        nalog      |       total       |\r\n");
+    printf("+------------+-------+----------------+----------------+-------------------+-------------------+\r\n");
+    printf("|%12.11s|%6g |%15g |%16g|%19g|%19g|",
+           name,
+           oklad,
+           stavka,
+           nachisleno,
+           nalog,
+           total);
+    printf("\n+------------+-------+----------------+----------------+-------------------+-------------------+");
+}
