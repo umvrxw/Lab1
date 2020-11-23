@@ -1,10 +1,12 @@
 #include <iostream>
 #include <cmath>
+
 int main()
 {
-    double x;
-    std::cin >> x ;
-    double f = 2*cos(sqrt(x))+0.5;
-    std::cout << f;
-    return 0;
+ using namespace std;
+ double x;
+   cin >> x;
+ double f = 2*cos(sqrt(x))+0.5;
+   cout << f;
+ return 0;
 }
